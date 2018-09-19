@@ -169,7 +169,7 @@ namespace lab_2
 
             var t1 = Tuple.Create(123, "Hello");
             var t2 = Tuple.Create(123, "Hello");
-            Console.WriteLine(t1.Equals(t2));   //true
+            //Console.WriteLine(t1.Equals(t2));   //true
 
             int[] intArray = new int[] { 1, 2, 3, 4, 5 }; //???????????????????
             string abs = "abs";
@@ -200,6 +200,7 @@ namespace lab_2
             Console.WriteLine(ourTuple.Item2);
             Console.WriteLine(ourTuple.Item3);
             Console.WriteLine(ourTuple.Item4);*/
+
 
             Console.ReadLine();
         }
