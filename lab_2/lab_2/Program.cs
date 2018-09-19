@@ -151,6 +151,14 @@ namespace lab_2
                 //Console.Write("{0}\t", myArr[2][d]);
             }
 
+            var varArray = new[] { 0, 1, 2 };
+            /*foreach (int element in varArray)
+            {
+                Console.WriteLine(element);
+            }*/
+
+            var varString = "qwerty";
+
             var tup = (count: 5, items: "words", letter1: 'w', words: "items", longg: 45234);   //кортежи
 
             /*Console.WriteLine(tup.count);
@@ -159,13 +167,39 @@ namespace lab_2
             Console.WriteLine(tup.words);
             Console.WriteLine(tup.longg);*/
 
+            var t1 = Tuple.Create(123, "Hello");
+            var t2 = Tuple.Create(123, "Hello");
+            Console.WriteLine(t1.Equals(t2));   //true
+
             int[] intArray = new int[] { 1, 2, 3, 4, 5 }; //???????????????????
-            string abs = "func";
+            string abs = "abs";
             (int, int, int, string) ourTuple;
-            void buildTuple(int[] numbers, string ourString)
+
+            BuildTuple(intArray, abs);
+            void BuildTuple(int[] numbers, string ourString)
             {
-                
+                int min = 10;
+                int max = 0;
+                int sum = 0;
+                for (int member = 0; member < 5; member++)
+                {
+                    if (min > numbers[member])
+                    {
+                        min = numbers[member];
+                    }
+                    if (max < numbers[member])
+                    {
+                        max = numbers[member];
+                    }
+                    sum += numbers[member];
+                }
+                ourTuple = (max, min, sum, ourString);
             }
+
+            /*Console.WriteLine(ourTuple.Item1);
+            Console.WriteLine(ourTuple.Item2);
+            Console.WriteLine(ourTuple.Item3);
+            Console.WriteLine(ourTuple.Item4);*/
 
             Console.ReadLine();
         }
