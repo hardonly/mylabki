@@ -67,13 +67,14 @@ namespace lab_2
             String.Compare("a","b"); //вернёт -1
 
             string sum_of_strings;      //сцепление
-            sum_of_strings = elefant + rabbit;
+            sum_of_strings = elefant + " " + rabbit;
             
             int startIndex = 8;     //выделение подстроки
             int length = 2;
             string substring_elef = elef.Substring(startIndex, length);
+            //Console.WriteLine(substring_elef);
 
-            string[] words = rabb.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries); //разбиение на слова
+            string[] words = rabb.Split(new string[] { " s " }, StringSplitOptions.RemoveEmptyEntries); //разбиение на слова, задание сиска разделителей?
             /*foreach (string strtttr in words)
             {
                 Console.WriteLine(strtttr);
@@ -193,13 +194,13 @@ namespace lab_2
                     }
                     sum += numbers[member];
                 }
-                ourTuple = (max, min, sum, ourString);
+                ourTuple = (max, min, sum, ourString); //извлечение первого элемента?????
             }
 
-            /*Console.WriteLine(ourTuple.Item1);
+            Console.WriteLine(ourTuple.Item1);
             Console.WriteLine(ourTuple.Item2);
             Console.WriteLine(ourTuple.Item3);
-            Console.WriteLine(ourTuple.Item4);*/
+            Console.WriteLine(ourTuple.Item4);
 
 
             Console.ReadLine();
