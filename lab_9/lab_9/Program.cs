@@ -107,8 +107,8 @@ namespace lab_9
             Console.ReadLine();
 
             Action<string> action;
-            Action<string> _out = Out;
-            Action<string> _firstWord = FirstWord;
+            //Action<string> _out = Out;
+            //Action<string> _firstWord = FirstWord;
             string value = "Good day";
             action = Out;
             action += FirstWord;
