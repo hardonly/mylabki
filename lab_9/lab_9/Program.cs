@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace lab_9
 {
     public delegate void ProgrammingLanguageStateHandler(string message);
-    delegate void Programmer();
+    //delegate void Programmer();
     public class ProgrammingLanguage
     {
         public string name;
