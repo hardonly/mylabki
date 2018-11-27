@@ -205,6 +205,7 @@ namespace lab_12
             var minArbitrary = (from i in triangles
                                 where i.type == "arbitrary"
                                 select i).Min(i => i.Perimeter);
+
             var maxRight = (from i in triangles
                             where i.type == "right"
                             select i).Max(i => i.Perimeter);
